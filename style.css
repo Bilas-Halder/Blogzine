@@ -39,7 +39,6 @@
     bottom: 0;
 
 }
-
 /* second navbar */
 .sec-navbar i{
     font-size: 1.5rem;
@@ -67,4 +66,46 @@
 }
 .right-content a:hover i{
     color: #2560e0;
+}
+
+/* Carousel */
+.set-carousel-color{
+    background-color: #E8EFFD;
+    border-radius: 7px;
+}
+.custom-btn-primary{
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 3px 1rem;
+}
+.carousel-item p{
+    width: 100%;
+}
+
+/* hover effect for paragraph */
+.underline-hover-effect{
+    position: relative;
+    padding-bottom: 0.1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.underline-hover-effect::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.5s ease-out;
+}
+.underline-hover-effect:hover::after{
+    width: 100%;
+}
+.carousel-item .underline-hover-effect::after{
+    background-color: black;
+    height: 1px;
 }
