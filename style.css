@@ -1,7 +1,18 @@
+footer{
+    margin-top: 500px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
 }
 /* First navbar */
 .nav-btn:hover
@@ -101,6 +112,7 @@
     height: 2px;
     background-color: white;
     transition: all 0.5s ease-out;
+    box-shadow: 0px 0px 32px rgb(0, 0, 0);
 }
 .underline-hover-effect:hover::after{
     width: 100%;
@@ -108,4 +120,135 @@
 .carousel-item .underline-hover-effect::after{
     background-color: black;
     height: 1px;
+}
+
+/* Home Body */
+.custom-round{
+    border-radius: 0.7rem;
+}
+.custom-absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card-grid{
+    height: 560px;
+}
+.gradient-effect{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36,0) 78%);
+}
+
+.first img,.second img,.third img,.fourth img{
+    transition: all 0.4s ease-in;
+}
+.second{
+    width: 100%;
+    border-radius: 0.7rem;
+    height: 268px;
+}
+.second:hover{
+    background-size: 110%;
+}
+/* hover effect */
+.first:hover .card-img,.second:hover .card-img,.third:hover .card-img,.fourth:hover .card-img{
+    transform: scale(1.1);
+}
+.first .underline-hover-effect::after{
+    height: 3px;
+}
+.first:hover .underline-hover-effect::after,.second:hover .underline-hover-effect::after,.third:hover .underline-hover-effect::after,.fourth:hover .underline-hover-effect::after{
+    width: 100%;
+}
+
+
+/* card texts */
+.text-shadow{
+    text-shadow: 0px 0px 4px #000000;
+}
+.main-card{    
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.btn-dot{
+    padding: 0 0.5rem 0 1.5rem;
+    position: relative;
+}
+.btn-dot::before{
+    content: '';
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card-footer{
+    padding:0px;
+    border-top: 0px;
+    background-color: #80808000;
+
+}
+.firs .author{
+    width: 35%;
+}
+.author-img{
+    width: 30%;
+    border-radius: 50%;
+}
+.by-author{
+    padding-left: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.first .by-author{
+    padding-left: 16px;
+}
+.date,.time-ago{
+    width: 9rem;
+}
+/* hover effect */
+.first:hover .author .underline-hover-effect::after,.second:hover .author .underline-hover-effect::after,.third:hover .author .underline-hover-effect::after,.fourth:hover .author .underline-hover-effect::after{
+    width: 0%;
+}
+
+.author .by-author .underline-hover-effect::after{
+    height: 1.2px;
+    color: white;
+    text-shadow: 0px 0px 8px #000000;
+}
+.author:hover .by-author .underline-hover-effect::after{
+    width: 100%;
+}
+.card-footer-dot::before{
+    height: 5px;
+    width: 5px;
+    top: 3px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+    .second{
+        height: 223px;
+    }
+}
+@media only screen and (max-width:990px) {
+    .second{
+        height: 300px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .second{
+        height: 273px;
+    }
 }
