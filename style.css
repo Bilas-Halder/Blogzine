@@ -1,10 +1,7 @@
-footer{
-    margin-top: 500px;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+body
+{
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -50,6 +47,7 @@ a:hover{
     bottom: 0;
 
 }
+
 /* second navbar */
 .sec-navbar i{
     font-size: 1.5rem;
@@ -131,9 +129,6 @@ a:hover{
     top: 0;
     left: 0;
 }
-.card-grid{
-    height: 560px;
-}
 .gradient-effect{
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36,0) 78%);
@@ -197,7 +192,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
     width: 35%;
 }
 .author-img{
-    width: 30%;
+    width: 22%;
     border-radius: 50%;
 }
 .by-author{
@@ -219,7 +214,6 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
 .author .by-author .underline-hover-effect::after{
     height: 1.2px;
     color: white;
-    text-shadow: 0px 0px 8px #000000;
 }
 .author:hover .by-author .underline-hover-effect::after{
     width: 100%;
@@ -230,6 +224,35 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
     top: 3px;
 }
 
+/* Highlight */
+.highlight-texts{
+    margin-left: -12px;
+}
+.card {
+    border: 0px ;
+}
+.card-body .card-footer .author{
+    width: 40%;
+}
+.card-body .author-img{
+    width: 22%;
+}
+.card-body .by-author{
+    margin-left: 1rem;
+}
+.card-body h4:after,.author-name::after{
+    background-color: #595d69;
+    box-shadow: none;
+}
+.black-footer-dot::before{
+    background-color: #595d69;
+}
+.color-gray{
+    color: #595d69;
+}
+
+
+/* trending topic */
 
 
 
