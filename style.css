@@ -1,8 +1,3 @@
-
-body
-{
-    font-family: 'Poppins', sans-serif;
-}
 a{
     text-decoration: none;
     color: inherit;
@@ -119,6 +114,16 @@ a:hover{
     background-color: black;
     height: 1px;
 }
+.black-underline::after{
+    background-color: black;
+}
+.small-underline::after{
+    height: 1.2px;
+}
+.v-small-underline::after{
+    height: 1px;
+}
+
 
 /* Home Body */
 .custom-round{
@@ -182,6 +187,11 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
     top: 0;
     left: 0;
 }
+/* making the dot black only for warning btn */
+.btn-warning::before{
+    background-color: #444444c2;
+}
+/* ------------------------------------------ */
 .card-footer{
     padding:0px;
     border-top: 0px;
@@ -362,19 +372,46 @@ background: linear-gradient(0deg, rgba(0,0,0,0.8939950980392157) 7%, rgba(2,2,36
     width: 30%;
     border-radius: 5px;
 }
-.black-underline::after{
-    background-color: black;
+
+/* Sponsored news */
+.card-body .card-footer .news-author{
+    width: 50%;
+}
+.news-author .author-img{
+    width: 30%;
+}
+.news-author .by-author{
+    margin-left: 0.7rem;
 }
 
-
-
-
-
-
-
-
-
-
+/* footer */
+footer{
+    background-color: #191A1F;
+}
+.footer-color{
+    color: #9e9e9e;
+}
+.brand-logo{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 3rem;
+}
+.brand-logo i{
+    color: #2163E8;
+}
+.brand-logo i span{
+    color: white;
+}
+.a-underline{
+    text-decoration: underline;
+}
+.a-underline:hover{
+    text-decoration: underline;
+}
+.features a:hover p, .news a:hover p{
+    color: #2163E8;
+}
 
 
 
