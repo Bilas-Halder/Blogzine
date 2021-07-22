@@ -23,47 +23,51 @@
     <section class="container">
       <nav class="navbar navbar-expand-lg navbar-light hr-line p-0">
         <div class="container-fluid px-0">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler float-right ml-auto mr-3" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link nav-btn" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-btn" aria-current="page" href="#">Forum</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-btn" aria-current="page" href="#">Buy Now</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-btn" aria-current="page" href="#">Login/Join</a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-lg-flex justify-content-between w-100">
 
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link dark-btn pt-1 mr-3" aria-current="page" href="#"><i class="fas fa-toggle-on"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-facebook-square"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-twitter-square"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-youtube-square"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-github-square"></i></a>
-              </li>
-            </ul>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center align-items-lg-end">
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" aria-current="page" href="#">Forum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" aria-current="page" href="#">Buy Now</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" aria-current="page" href="#">Login/Join</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav flex-row justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link dark-btn pt-1 mr-3" aria-current="page" href="#"><i
+                      class="fas fa-toggle-on"></i></a>
+                </li>
+                <li class="nav-item mx-2 mx-lg-0">
+                  <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="nav-item mx-2 mx-lg-0">
+                  <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li class="nav-item mx-2 mx-lg-0">
+                  <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="nav-item mx-2 mx-lg-0">
+                  <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-youtube-square"></i></a>
+                </li>
+                <li class="nav-item mx-2 mx-lg-0">
+                  <a class="nav-link icon-btn" aria-current="page" href="#"><i class="fab fa-github-square"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -156,10 +160,10 @@
           </div>
 
           <!-- second mark -->
-          <div class="right-content d-flex align-items-center">
+          <div class="right-content d-flex align-items-center float-right ml-auto">
             <button class="btn btn-danger">Subscribe!</button>
-            <a href=""><i class="fas fa-search pl-3"></i></a>
-            <a href=""><i class="fas fa-bars pl-3"></i></a>
+            <a href=""><i class="fas fa-search pl-3 mr-3 mr-lg-0"></i></a>
+            <a href=""><i class="fas fa-bars pl-3 d-none d-lg-inline-block"></i></a>
 
           </div>
 
@@ -173,9 +177,9 @@
 
     <!-- Carousel -->
     <section class="container set-carousel-color p-2 d-flex">
-      <div class="btn btn-primary custom-btn-primary mr-3"> Trending:</div>
+      <div class="btn btn-primary custom-btn-primary my-auto text-center"> Trending:</div>
       <!-- main carousel -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleSlidesOnly" class="ml-2 carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <p class="my-1 underline-hover-effect">The most common business debate isn't as black and white as you might
@@ -302,9 +306,9 @@
       </div>
     </section>
 
-    <!-- highlights -->
+    <!-- highlights & right side -->
     <section class="position-relative highlights">
-      <div class="container overflow-hidden">
+      <div class="container overflow-hidden hr-line highlights-container">
         <div class="row">
           <div class="col-lg-9 col-md-12">
             <div class="px-3">
@@ -484,6 +488,12 @@
                     </div>
                   </div>
                 </div>
+                <!-- end button -->
+                <div class="d-flex justify-content-center mb-5">
+                  <a target="blank" class="end-btn live" href="https://www.youtube.com/">Load More Post
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                  </a>
+                </div>
 
               </div>
             </div>
@@ -491,8 +501,183 @@
           <div class="col-lg-3 col-md-12">
 
             <!-- right side -->
+            <div class="p-0 mb-5">
+              <div class="container p-0 overflow-hidden">
+                <div class="d-flex social justify-content-between">
+                  <div class="d-flex w-30">
+                    <a href="#" class="facebook w-100 fa-icon-font my-0 text-center">
+                      <i class="fab fa-facebook-square"></i>
+                      <h6 class="h6">5.5K <span>Likes</span></h6>
+                    </a>
+                  </div>
+                  <div class="d-flex w-30">
+                    <a href="#" class="instagram w-100 fa-icon-font my-0 text-center">
+                      <i class="fab fa-instagram"></i>
+                      <h6 class="h6">1.8M <span>Fans</span></h6>
+                    </a>
+                  </div>
+                  <div class="d-flex w-30">
+                    <a href="#" class="youtube w-100 fa-icon-font my-0 text-center">
+                      <i class="fab fa-youtube-square"></i>
+                      <h6 class="h6">22K <span>Subs</span></h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- trending topics -->
-            <div class="p-3">
+            <div class="topics w-100">
+              <h4 class="h4" style="font-weight: 600;">Trending topics</h4>
+
+              <div class="container">
+                <div class="row row-cols-1">
+                  <div class="col p-0">
+                    <div class="fourth card overflow-hidden text-white custom-round-topics mt-3">
+                      <img src="images/topics/1.png" class="card-img" alt="...">
+
+                      <div class="card-img-overlay gradient-effect-2 middle-text p-3 p-lg-4">
+                        <div class="main-card d-flex align-items-center justify-content-center">
+                          <div class="card-text">
+                            <h3 class="card-title underline-hover-effect h5 ">Travel</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col p-0">
+                    <div class="fourth card overflow-hidden text-white custom-round-topics mt-3">
+                      <img src="images/topics/2.png" class="card-img" alt="...">
+
+                      <div class="card-img-overlay gradient-effect-2 middle-text p-3 p-lg-4">
+                        <div class="main-card d-flex align-items-center justify-content-center">
+                          <div class="card-text">
+                            <h3 class="card-title underline-hover-effect h5 ">Business</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col p-0">
+                    <div class="fourth card overflow-hidden text-white custom-round-topics mt-3">
+                      <img src="images/topics/3.png" class="card-img" alt="...">
+
+                      <div class="card-img-overlay gradient-effect-2 middle-text p-3 p-lg-4">
+                        <div class="main-card d-flex align-items-center justify-content-center">
+                          <div class="card-text">
+                            <h3 class="card-title underline-hover-effect h5 ">Marketing</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col p-0">
+                    <div class="fourth card overflow-hidden text-white custom-round-topics mt-3">
+                      <img src="images/topics/4.png" class="card-img" alt="...">
+
+                      <div class="card-img-overlay gradient-effect-2 middle-text p-3 p-lg-4">
+                        <div class="main-card d-flex align-items-center justify-content-center">
+                          <div class="card-text">
+                            <h3 class="card-title underline-hover-effect h5 ">Photography</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col p-0">
+                    <div class="fourth card overflow-hidden text-white custom-round-topics mt-3">
+                      <img src="images/topics/5.png" class="card-img" alt="...">
+
+                      <div class="card-img-overlay gradient-effect-2 middle-text p-3 p-lg-4">
+                        <div class="main-card d-flex align-items-center justify-content-center">
+                          <div class="card-text">
+                            <h3 class="card-title underline-hover-effect h5 ">Sports</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end button -->
+              <div class="d-flex justify-content-center my-3">
+                <a target="blank" class="topics-btn" href="#">View all categories</a>
+              </div>
+              <div class="container mt-4">
+                <div class="row row-cols-1">
+                  <div class="col p-0">
+                    <h4 style="font-weight: 600; font-size: 1.3rem;">Recent posts</h4>
+                    <div class="row row-cols-1 mt-3">
+                      <div class="col-4 pr-0">
+                        <img class="img-fluid rounded" src="images/posts/1.jpg" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="post-text">
+                          <a href="#">
+                            <h6 class="underline-hover-effect black-underline"
+                              style="font-weight: 600; font-size: 15px;">The pros and
+                              cons of business agency</h6>
+                          </a>
+                          <div class="small" style="color: gray;">July 07, 2021</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 mt-3">
+                      <div class="col-4 pr-0">
+                        <img class="img-fluid rounded" src="images/posts/2.jpg" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="post-text">
+                          <a href="#">
+                            <h6 class="underline-hover-effect black-underline"
+                              style="font-weight: 600; font-size: 15px;">5 reasons why you shouldn't startup</h6>
+                          </a>
+                          <div class="small" style="color: gray;">July 07, 2021</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 mt-3">
+                      <div class="col-4 pr-0">
+                        <img class="img-fluid rounded" src="images/posts/3.jpg" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="post-text">
+                          <a href="#">
+                            <h6 class="underline-hover-effect black-underline"
+                              style="font-weight: 600; font-size: 15px;">Ten question you should answer truthfully.</h6>
+                          </a>
+                          <div class="small" style="color: gray;">July 07, 2021</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-1 mt-3">
+                      <div class="col-4 pr-0">
+                        <img class="img-fluid rounded" src="images/posts/4.jpg" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="post-text">
+                          <a href="#">
+                            <h6 class="underline-hover-effect black-underline"
+                              style="font-weight: 600; font-size: 15px;">Five unbelievable facts about money.</h6>
+                          </a>
+                          <div class="small" style="color: gray;">July 07, 2021</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-5">
+                      <small style="font-size: 12px;">Done by
+                        <span style="text-decoration: underline;">
+                          <a target="blank" href="https://github.com/Bilas-Halder"> Bilas Halder</a>
+                        </span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </div>
           </div>
@@ -500,11 +685,9 @@
       </div>
     </section>
 
-
   </main>
 
-
-  <footer>
+  <footer style="margin-top: 500px;">
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
