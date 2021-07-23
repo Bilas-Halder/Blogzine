@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -40,7 +44,6 @@ a:hover{
     position: absolute;
     left: 0;
     bottom: 0;
-
 }
 
 /* second navbar */
@@ -216,6 +219,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
 .date,.time-ago{
     width: 9rem;
 }
+
 /* hover effect */
 .first:hover .author .underline-hover-effect::after,.second:hover .author .underline-hover-effect::after,.third:hover .author .underline-hover-effect::after,.fourth:hover .author .underline-hover-effect::after{
     width: 0%;
@@ -264,6 +268,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
 .color-gray{
     color: #595d69;
 }
+
 /* end button */
 .end-btn{
     color: #2163E8;
@@ -288,7 +293,6 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
 .live:hover i{
     transform: rotate(180deg);
 }
-
 
 /* trending topic */
 .social{
@@ -356,7 +360,6 @@ background: linear-gradient(0deg, rgba(0,0,0,0.7906512946975666) 0%, rgba(2,2,36
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,0.8939950980392157) 7%, rgba(2,2,36,0) 100%);
 }
-
 .topics-btn{
     font-weight: 600;
     color: gray;
@@ -372,7 +375,6 @@ background: linear-gradient(0deg, rgba(0,0,0,0.8939950980392157) 7%, rgba(2,2,36
     width: 30%;
     border-radius: 5px;
 }
-
 /* Sponsored news */
 .card-body .card-footer .news-author{
     width: 50%;
@@ -409,14 +411,21 @@ footer{
 .a-underline:hover{
     text-decoration: underline;
 }
-.features a:hover p, .news a:hover p{
+.features a p, .news a p, .hot-topics a p,.blue-hover{
+    transition: color 0.15s ease-in;
+}
+.features a:hover p, .news a:hover p, .hot-topics a:hover p,.blue-hover:hover{
     color: #2163E8;
+}
+.blue-hover::after{
+    background-color: #2163E8;
+}
+.footer-fluid{
+    background-color: #111113;
 }
 
 
-
-
-
+/* Little media query */
 @media only screen and (max-width:1200px) {
     .second{
         height: 223px;
@@ -425,6 +434,11 @@ footer{
 @media only screen and (max-width:990px) {
     .second{
         height: 300px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .first-date{
+        margin-left: -110px;
     }
 }
 @media only screen and (max-width:300px) {
